@@ -1,0 +1,12 @@
+Logický projekt - Turingov stroj
+xhalin01 - Michael Halinár
+
+Implementácia: 
+program si načíta vstup zo súboru, následne vytvorí pravidlá a štartovaciu pásku. Po tom začne podľa aktuálneho stavu a znaku pod hlavou vyberať a aplikovať pravidlá. Ak sa dostane do koncového stavu F program končí s výpisom postupností pásiek. Ak sa pokusí posúvať hlavu do ľava kde už nie je miesto, končí s chybovou hláškou. Ak sa zacyklí nastáva pretečenie zásobníka. Pri posune hlavy na prázdne miesto doplní TS prázdny symbol ' ' a pokračuje v hladaní pravidiel.
+
+
+Testy: 
+testValid.txt - doba výpočtu <1s, test zo zadania
+testAbnormalStop.txt - doba výpočtu <1s, pokus o posun do ľava pri hlave na najlavejšom mieste
+testBlank.txt - doba výpočtu <1s, doplnenie prázdneho symbolu na koniec pásky 
+testOverflow.txt - doba výpočtu <30s, zacyklenie nekonečnym posunom do prava
